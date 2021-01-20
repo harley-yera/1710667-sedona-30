@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Yerazik Hakobyan](https://up.htmlacademy.ru/htmlcss/30/user/1710667).
-* Наставник: `Неизвестно`.
+* Наставник: [Егор Глебов](https://htmlacademy.ru/profile/beast).
 
 ---
 
