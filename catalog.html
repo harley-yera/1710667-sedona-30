@@ -1,131 +1,202 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
 
 <body>
 
-<header class="main-header">
- <nav>
-  <!--
-
-    <img scr="img/index-logo.svg" width="" height="" alt="Логотип города Седоны">
-
--->
-  <ul>
-    <li><a href="blank.html">Информация</a></li>
-    <li><a href="blank.html">Фото и видео</a></li>
-    <li><a href="blank.html">Карта Штата</a></li>
-    <li><a href="catalog.html">Гостиницы</a></li>
-  </ul>
- </nav>
+<header class="header">
+  <nav>
+    <a class="header-logo">
+      <img src="img/index-logo.svg" width="138" height="70" alt="Логотип города Седоны">
+    </a>
+    <ul class="site-navigation">
+      <li><a href="blank.html">Информация</a></li>
+      <li><a href="blank.html">Фото и видео</a></li>
+      <li><a href="blank.html">Карта Штата</a></li>
+      <li><a href="catalog.html">Гостиницы</a></li>
+    </ul>
+  </nav>
 </header>
+
 <main>
 
- <section>
-   <h2>Фильтр гостиниц</h2>
-   <form method="get" action="https://echo.htmlacademy.ru">
-    <fieldset>
-     <legend>Инфраструктура</legend>
-     <ul>
-       <li>
-         <input type="checkbox" name="pool" id="filter-pool" checked>
-         <label for="filter-pool">Бассейн</label>
-       </li>
-       <li>
-         <input type="checkbox" name="parking-lot" id="filter-parking-lot">
-         <label for="filter-parking-lot">Парковка</label>
-       </li>
-       <li>
-         <input type="checkbox" name="wifi" id="filter-wifi">
-         <label for="filter-wifi">Wi-Fi</label>
-       </li>
-     </ul>
-    </fieldset>
-    <fieldset>
-      <legend>Тип жилья</legend>
-      <ul>
-        <li>
-          <input type="checkbox" name="hotel" id="filter-hotel" checked>
-          <label for="filter-hotel">Гостиница</label>
-        </li>
-        <li>
-          <input type="checkbox" name="motel" id="filter-motel" checked>
-          <label for="filter-motel">Мотель</label>
-        </li>
-        <li>
-          <input type="checkbox" name="apartment" id="filter-apartment" checked>
-          <label for="filter-apartment">Апартаменты</label>
-        </li>
-      </ul>
-    </fieldset>
-    <button type="submit">Показать</button>
-   </form>
- </section>
- <section>
-   <h2>Найдено 3</h2>
-   <ul>
-     <li>
-       <a href="hotel.html">
-         <h3>Amara Resort & Spa</h3>
-         <p>
-           <img src="img/hotel.jpg" width="135" height="90" alt="Amara Resort & Spa">
-         </p>
-       </a>
-       <p>
-       </p>
-     </li>
-     <li>
-       <a href="motel.html">
-         <h3>Desert Quaill Inn</h3>
-         <p>
-          <img src="img/motel.jpg" width="" height="" alt="Desert Quaill Inn">
-         </p>
-       </a>
-       <p>
-       </p>
-     </li>
-     <li>
-       <a href="apartment.html">
-         <h3>Villas At Poco Diablo</h3>
-         <p>
-           <img src="img/apartment.jpg" width="" height="" alt="Villas At Poco Diablo">
-         </p>
-       </a>
+  <section>
+    <img src="img/background.png" width= "1200" height="217" alt="Очертание гор Сидоны">
+    <h2>Фильтр гостиниц</h2>
+    <form method="get" action="https://echo.htmlacademy.ru">
+      <fieldset>
+        <legend>Инфраструктура</legend>
+        <ul>
+          <li>
+            <input type="checkbox" name="pool" id="filter-pool" checked>
+            <label for="filter-pool">Бассейн</label>
+          </li>
+          <li>
+            <input type="checkbox" name="parking-lot" id="filter-parking-lot">
+            <label for="filter-parking-lot">Парковка</label>
+          </li>
+          <li>
+            <input type="checkbox" name="wifi" id="filter-wifi">
+            <label for="filter-wifi">Wi-Fi</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Тип жилья</legend>
+        <ul>
+          <li>
+            <input type="checkbox" name="hotel" id="filter-hotel" checked>
+            <label for="filter-hotel">Гостиница</label>
+          </li>
+          <li>
+            <input type="checkbox" name="motel" id="filter-motel" checked>
+            <label for="filter-motel">Мотель</label>
+          </li>
+          <li>
+            <input type="checkbox" name="apartment" id="filter-apartment" checked>
+            <label for="filter-apartment">Апартаменты</label>
+          </li>
+        </ul>
+      <button type="submit">Показать</button>
+      </fieldset>
+      <!--
+      <fieldset>
+        <legend>Стоимость в сутки (Р)</legend>
+        <ul>
+          <li>
+            <input type="text" name="cost" id="range-from">
+            <label for="range-from">От</label>
+          </li>
+          <li>
+            <input type="text" name="cost" id="range-to">
+            <label for="range-to">До</label>
+          </li>
+        </ul>
+        <button type="submit">Показать</button>
+      </fieldset>
+      эта шкала у меня не получается, можешь порекомендовать тэг, в <div> можно завернуть?
+      -->
+    </form>
+  </section>
+  <section>
+  <p>Найдено: 3</p><!--Думаю что о сыслу здесь заголовок это "Сортировка", но он идет после "Найдено: 3"
+                    ...не понимаю как оформить заголовок.-->
+  <h2>Сортировка</h2>
+    <ul>
+      <li>
+        По цене
+      </li>
+      <li>
+        <a href="blank.html">По типу</a>
+      </li>
+      <li>
+        <a href="blank.html">По рейтингу</a>
+      </li>
+    </ul>
+    <i class="icon-up-dir"></i>
+    <i class="icon-down-dir"></i>
+  </section>
+  <section>
+    <h2>Найденые гостиницы</h2>
+    <ul>
+      <li>
+        <a href="hotel.html">
+          <h3>Amara Resort & Spa</h3>
+          <p>
+            <img src="img/hotel.jpg" width="135" height="90" alt="Amara Resort & Spa">
+          </p>
+        </a>
         <p>
+          <span>Гостиница</span> 
+          <span>От 4000 Р.</span>
+          <i class="star"></i> 
+          <i class="star"></i>
+          <i class="star"></i>
+          <i class="star"></i>
+            <!--Еще попалось такое решение: 
+                <div class="hotel-rate">
+                <div class="hotel-rate hotel-stars-four">Звезды</div>
+                <div class="hotel-rate-text">Рейтинг 8,5</div>
+                </div>
+                просто так слишком много дивов получается :(...Как со звезами-иконками быть?
+              ... Может оставить на время когда будем стили подключать? -->
         </p>
-     </li>
-   </ul>
- </section>
+        <p>
+          <a href="blank.html">Подробнее</a>
+          <button type="button">Забронировать</button>
+        </p>
+      </li>
+      <li>
+        <a href="motel.html">
+          <h3>Desert Quaill Inn</h3>
+          <p>
+            <img src="img/motel.jpg" width="135" height="90" alt="Desert Quaill Inn">
+          </p>
+        </a>
+        <p>
+          <span>Мотель</span>
+          <span>От 3000 Р.</span>
+         <!--Три звезды и рейтинг 8,9 как будет выше-->
+        </p>
+        <p>
+        <a href="blank.html">Подробнее</a>
+        <button type="button">Забронировать</button>
+        </p>
+      </li>
+      <li>
+        <a href="apartment.html">
+          <h3>Villas At Poco Diablo</h3>
+          <p>
+            <img src="img/apartment.jpg" width="135" height="90" alt="Villas At Poco Diablo">
+          </p>
+        </a>
+          <p>
+            <span>Апартаменты</span>
+            <span>От 2000 Р.</span>
+            <!--Две звезды и рейтинг 9,2 как будет выше-->
+          </p>
+          <p>
+            <a href="blank.html">Подробнее</a>
+            <button type="button">Забронировать</button>
+          </p>
+      </li>
+    </ul>
+  </section>
 
 </main>
-<footer class="main-footer">
-<section>
-  <h2>Как нас найти</h2>
-  <p><a href="blank.html">#visitSEDONA</a><br>
-    ТЕЛ: <a href="tel:+74956660166">+7(495)666-01-66</a>
-  </p>
-</section>
-<section>
-<h2>Мы в соцсетях</h2> <!--потом закрыть -->
-<ul>
-  <li>
-    <a href="#">Твиттер</a>
-  </li>
-  <li>
-    <a href="#">Фейсбук</a>
-  </li>
-  <li>
-    <a href="#">Ютуб</a>
-  </li>
-</ul>
-</section>
-<p>Website by</p>
-<a>
-  <img src="img/logo-htmlacademy.svg" width="26.69px" height="12.22px" alt="Логотип HTML Академии">
-</a>
+
+<footer class="footer">
+  <section>
+    <h2>Как нас найти</h2>
+    <p>
+      <a href="blank.html">#visitSEDONA</a>
+      ТЕЛ: <a href="tel:+74956660166">+7(495)666-01-66</a>
+    </p>
+  </section>
+  <section>
+    <h2>Мы в соцсетях</h2>
+    <ul>
+      <li>
+        <a href="#">Твиттер</a>
+      </li>
+      <li>
+        <a href="#">Фейсбук</a>
+      </li>
+      <li>
+        <a href="#">Ютуб</a>
+      </li>
+    </ul>
+  </section>
+  <section>
+    <h2>Копирайт</h2>
+    <p>Website by</p>
+    <a href="https://htmlacademy.ru/intensive/htmlcss">
+      <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Академии">
+    </a>
+  </section>
 </footer>
 </body>
 </html>
