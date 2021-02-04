@@ -9,7 +9,7 @@
 
 <header class="header">
   <nav>
-    <a class="header-logo">
+    <a href="index.html" class="header-logo"><!--здесь ссылка на главную - index.html, но по логике демок надо на catalog.html?-->
       <img src="img/index-logo.svg" width="138" height="70" alt="Логотип города Седоны">
     </a>
     <ul class="site-navigation">
@@ -24,7 +24,6 @@
 <main>
 
   <section>
-    <img src="img/background.png" width= "1200" height="217" alt="Очертание гор Сидоны">
     <h2>Фильтр гостиниц</h2>
     <form method="get" action="https://echo.htmlacademy.ru">
       <fieldset>
@@ -60,31 +59,14 @@
             <label for="filter-apartment">Апартаменты</label>
           </li>
         </ul>
-      <button type="submit">Показать</button>
-      </fieldset>
-      <!--
-      <fieldset>
-        <legend>Стоимость в сутки (Р)</legend>
-        <ul>
-          <li>
-            <input type="text" name="cost" id="range-from">
-            <label for="range-from">От</label>
-          </li>
-          <li>
-            <input type="text" name="cost" id="range-to">
-            <label for="range-to">До</label>
-          </li>
-        </ul>
         <button type="submit">Показать</button>
       </fieldset>
-      эта шкала у меня не получается, можешь порекомендовать тэг, в <div> можно завернуть?
-      -->
+      <!-- здесь будет шкала -->
     </form>
   </section>
   <section>
-  <p>Найдено: 3</p><!--Думаю что о сыслу здесь заголовок это "Сортировка", но он идет после "Найдено: 3"
-                    ...не понимаю как оформить заголовок.-->
-  <h2>Сортировка</h2>
+    <p>Найдено:<!--3--></p><!--А можно номер обернуть в <span>? чтоб потом отдельно работать с номером-->
+    <h2>Сортировка</h2>
     <ul>
       <li>
         По цене
@@ -116,17 +98,12 @@
           <i class="star"></i>
           <i class="star"></i>
           <i class="star"></i>
-            <!--Еще попалось такое решение: 
-                <div class="hotel-rate">
-                <div class="hotel-rate hotel-stars-four">Звезды</div>
-                <div class="hotel-rate-text">Рейтинг 8,5</div>
-                </div>
-                просто так слишком много дивов получается :(...Как со звезами-иконками быть?
-              ... Может оставить на время когда будем стили подключать? -->
+          <span>Рейтинг: 8,5</span>
+            <!--Потом совместить с тем что выше -->
         </p>
         <p>
           <a href="blank.html">Подробнее</a>
-          <button type="button">Забронировать</button>
+          <a href="blank.html">Забронировать</a>
         </p>
       </li>
       <li>
@@ -139,11 +116,17 @@
         <p>
           <span>Мотель</span>
           <span>От 3000 Р.</span>
-         <!--Три звезды и рейтинг 8,9 как будет выше-->
+          <i class="star"></i> 
+          <i class="star"></i>
+          <i class="star"></i>
+          <span>Рейтинг: 8,9</span>
+          <!--Потом совместить с тем что выше-->
         </p>
         <p>
-        <a href="blank.html">Подробнее</a>
-        <button type="button">Забронировать</button>
+          <a href="blank.html">Подробнее</a>
+          <a href="blank.html">Забронировать</a><!--да, я только поняла что это не кнопка, а ссылка, так как нужно открыть еще 
+                                               одну или больше страниц (может на другом сайте), ввести данные 
+                                               и толко потом можно будет забронировать отель-->
         </p>
       </li>
       <li>
@@ -156,11 +139,14 @@
           <p>
             <span>Апартаменты</span>
             <span>От 2000 Р.</span>
-            <!--Две звезды и рейтинг 9,2 как будет выше-->
+            <i class="star"></i> 
+            <i class="star"></i>
+            <span>Рейтинг: 9,2</span>
+            <!--Потом совместить с тем что выше-->
           </p>
           <p>
             <a href="blank.html">Подробнее</a>
-            <button type="button">Забронировать</button>
+            <a href="blank.html">Забронировать</a>
           </p>
       </li>
     </ul>
@@ -173,7 +159,7 @@
     <h2>Как нас найти</h2>
     <p>
       <a href="blank.html">#visitSEDONA</a>
-      ТЕЛ: <a href="tel:+74956660166">+7(495)666-01-66</a>
+      Тел: <a href="tel:+74956660166">+7(495)666-01-66</a>
     </p>
   </section>
   <section>
