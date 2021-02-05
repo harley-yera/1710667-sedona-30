@@ -3,13 +3,18 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/icons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body>
 
 <header class="header">
   <nav>
-    <a href="index.html" class="header-logo"><!--здесь ссылка на главную - index.html, но по логике демок надо на catalog.html?-->
+    <a href="index.html" class="header-logo">
       <img src="img/index-logo.svg" width="138" height="70" alt="Логотип города Седоны">
     </a>
     <ul class="site-navigation">
@@ -65,11 +70,14 @@
     </form>
   </section>
   <section>
-    <p>Найдено:<!--3--></p><!--А можно номер обернуть в <span>? чтоб потом отдельно работать с номером-->
+    <p>
+      Найдено:
+      <span>3</span>
+    </p>
     <h2>Сортировка</h2>
     <ul>
       <li>
-        По цене
+        <a href="blank.html">По цене</a>
       </li>
       <li>
         <a href="blank.html">По типу</a>
@@ -78,8 +86,8 @@
         <a href="blank.html">По рейтингу</a>
       </li>
     </ul>
-    <i class="icon-up-dir"></i>
-    <i class="icon-down-dir"></i>
+    <a href="blank.html"><i class="icon-up"></i></a>
+    <a href="blank.html"><i class="icon-down"></i></a>
   </section>
   <section>
     <h2>Найденые гостиницы</h2>
@@ -94,6 +102,8 @@
         <p>
           <span>Гостиница</span> 
           <span>От 4000 Р.</span>
+        </p>
+        <p>
           <i class="star"></i> 
           <i class="star"></i>
           <i class="star"></i>
@@ -116,6 +126,8 @@
         <p>
           <span>Мотель</span>
           <span>От 3000 Р.</span>
+        </p>
+        <p>
           <i class="star"></i> 
           <i class="star"></i>
           <i class="star"></i>
@@ -124,9 +136,7 @@
         </p>
         <p>
           <a href="blank.html">Подробнее</a>
-          <a href="blank.html">Забронировать</a><!--да, я только поняла что это не кнопка, а ссылка, так как нужно открыть еще 
-                                               одну или больше страниц (может на другом сайте), ввести данные 
-                                               и толко потом можно будет забронировать отель-->
+          <a href="blank.html">Забронировать</a>
         </p>
       </li>
       <li>
@@ -139,6 +149,8 @@
           <p>
             <span>Апартаменты</span>
             <span>От 2000 Р.</span>
+          </p>
+          <p>
             <i class="star"></i> 
             <i class="star"></i>
             <span>Рейтинг: 9,2</span>
