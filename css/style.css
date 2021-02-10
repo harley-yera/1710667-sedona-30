@@ -1,0 +1,254 @@
+/* Variables */
+
+:root {
+  --basic-white: #FFFFFF;
+  --basic-black: #000000;
+  --basic-cyan-blue: #81B3D2;
+  --basic-dark-charcoal: #333333;
+  --basic-gray: #EEEEEE;
+  --basic-grayish-orange: #766357;
+  --basic-light-gray: #F2F2F2;
+  --basic-dark-gray: #A9A9A9;
+  --basic-dark-grayish-orange: #604E43;
+  --basic-darker-grayish-orange: #503E33;
+  --basic-dark-cyan-blue: #669EC0;
+  --basic-Shakespeare: #5496BD;
+  --basic-white-smoke: #EBEBEB;
+
+}
+
+/* Global */
+
+body {
+min-width: 1220px; /**/
+margin: 0;
+padding: 0;
+font-family: "PT Sans", sans-serif;
+font-size: 14px;
+line-height: 21px;
+font-weight: 400;
+color: var(--basic-dark-charcoal);
+text-transform: uppercase;
+background-color: var(--basic-white);
+background-image: none;
+background-position: top center;
+background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Main header */
+
+.inner-page .main header {
+  background-color: var(--basic-white);
+}
+
+/* Main navigation */
+
+.main-navigation {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color:var(--basic-black);
+  background-color: transparent;
+}
+
+.main-navigation-wrapper {
+  background-color: var(--basic-white);
+}
+
+.site-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  list-style: none;
+}
+
+.site-navigation-current a:not([href]) {
+  background-color: var(--basic-white);
+}
+
+/* User navigation*/
+
+.site-navigation a .user-navigation a {
+  color: var(--basic-black)
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.site-navigation a:hover,
+.site-navigation a:focus {
+  background-color: var(--basic-white)
+}
+
+/* Container */
+
+.hidden {
+  display: none;
+}
+
+
+.introduction h3 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color:var(--basic-black);
+  text-align: center;
+}
+
+.introduction p {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color:var(--basic-dark-charcoal);
+  text-align: center;
+}
+
+/* Advantages */
+
+.advantages-list,
+.features-list {
+  list-style: none;
+}
+.highlighted-advantage-item {
+  text-align: center;
+  color: var(--basic-white);
+}
+
+.advantage-item {
+  text-align: center;
+}
+
+.highlighted-advantage-item h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.highlited-advantage-item p {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.advantage-item h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: var(--basic-black);
+}
+
+.advantage-item p {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--basic-dark-charcoal);
+}
+
+.features-list h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: var(--basic-black);
+}
+
+.features-list p {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--basic-dark-charcoal);
+}
+
+.highlighted-find-hotels {
+  font-size: 30px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--basic-black);
+}
+
+
+
+
+/* Footer */
+
+.main-footer {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+.footer-contacts a {
+  color: var(--basic-black);
+  text-decoration: none;
+}
+
+.footer-contacts a:hover,
+.footer-contacts a:focus {
+  text-decoration: none;
+}
+
+
+.hashtag {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--basic-black);
+  text-align: center;
+}
+
+.contacts-phone {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--basic-black);
+  text-align: center;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+/* Social buttons */
+
+.social-button {
+  color: inherit;/**/
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: var(--basic-dark-cyan-blue)
+}
+
+.footer-copyright p {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: var(--basic-black);
+}
+
+/* Catalog filter */
+
+.infrastructure-type-filter,
+.accomodation-type-filter {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+  color: var(--basic-white);
+}
+
+.infrastructure-item,
+.accomodation-item {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--basic-white)
+}
