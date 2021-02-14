@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap">
+
   <link href="normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 
@@ -16,11 +16,11 @@
 <body class="page-body inner-page">
 
 <header class="main-header">
-  <nav class="main-navigation">
+  <nav class="main-nav">
     <a class="main-header-logo" href="index.html">
       <img src="img/index-logo.svg" width="138" height="70" alt="Логотип города Седоны">
     </a>
-    <ul class="site-navigation">
+    <ul class="site-nav">
       <li><a href="blank.html">Информация</a></li>
       <li><a href="blank.html">Фото и видео</a></li>
       <li><a href="blank.html">Карта Штата</a></li>
@@ -33,25 +33,25 @@
 
   <section>
     <h2 class="hidden">Фильтр гостиниц</h2>
-    <form class="infrastructure-type-filter" method="get" action="https://echo.htmlacademy.ru">
-      <fieldset class="accomodation-infrastructure">
+    <form class="accomodation-filter" method="get" action="https://echo.htmlacademy.ru">
+      <fieldset class="accomodation">
         <legend>Инфраструктура</legend>
         <ul>
-          <li class="infrastructure-item">
+          <li class="accomodation-item">
             <input type="checkbox" name="pool" id="filter-pool" checked>
             <label for="filter-pool">Бассейн</label>
           </li>
-          <li class="infrastructure-item">
+          <li class="accomodation-item">
             <input type="checkbox" name="parking-lot" id="filter-parking-lot">
             <label for="filter-parking-lot">Парковка</label>
           </li>
-          <li class="infrastructure-item">
+          <li class="accomodation-item">
             <input type="checkbox" name="wifi" id="filter-wifi">
             <label for="filter-wifi">Wi-Fi</label>
           </li>
         </ul>
       </fieldset>
-      <fieldset class="accomodation-type-filter">
+      <fieldset class="accomodation-filter">
         <legend>Тип жилья</legend>
         <ul>
           <li>
@@ -72,41 +72,41 @@
       <!-- здесь будет шкала -->
     </form>
   </section>
-  <section>
+  <section class="hotel-found">
     <p>
       Найдено:
       <span>3</span>
     </p>
-    <h2 class="search-filter">Сортировка</h2>
+    <h2 class="hotels-filter">Сортировка</h2>
     <ul>
       <li>
-        <a class="search-filter-option" href="blank.html">По цене</a>
+        <a class="hotel-option" href="blank.html">По цене</a>
       </li>
       <li>
-        <a class="search-filter-option"href="blank.html">По типу</a>
+        <a class="hotel-option"href="blank.html">По типу</a>
       </li>
       <li>
-        <a class="search-filter-option" href="blank.html">По рейтингу</a>
+        <a class="hotel-option" href="blank.html">По рейтингу</a>
       </li>
     </ul>
     <a href="blank.html"><i class="icon-up"></i></a>
     <a href="blank.html"><i class="icon-down"></i></a>
   </section>
-  <section>
+  <section class="hotels">
     <h2>Найденые гостиницы</h2>
     <ul>
-      <li class="found-item">
+      <li class="hotel">
         <a href="hotel.html">
-          <h3>Amara Resort & Spa</h3>
-          <p>
+          <h3 class="hotel-name">Amara Resort & Spa</h3>
+          <p class="hotel-image">
             <img src="img/hotel.jpg" width="135" height="90" alt="Amara Resort & Spa">
           </p>
         </a>
-        <p class="item-price">
+        <p class="hotel-price">
           <span>Гостиница</span>
           <span>От 4000 Р.</span>
         </p>
-        <p class="item-rating">
+        <p class="hotel-rating">
           <i class="star"></i>
           <i class="star"></i>
           <i class="star"></i>
@@ -115,22 +115,22 @@
             <!--Потом совместить с тем что выше -->
         </p>
         <p>
-          <a class="item-info-button" href="blank.html">Подробнее</a>
-          <a class="item-book-button" href="blank.html">Забронировать</a>
+          <a class="hotel-button" href="blank.html">Подробнее</a>
+          <a class="hotel-button-color" href="blank.html">Забронировать</a>
         </p>
       </li>
-      <li class="found-item">
+      <li class="hotel">
         <a href="motel.html">
-          <h3>Desert Quaill Inn</h3>
-          <p>
+          <h3 class="hotel-name">Desert Quaill Inn</h3>
+          <p class="hotel-image">
             <img src="img/motel.jpg" width="135" height="90" alt="Desert Quaill Inn">
           </p>
         </a>
-        <p class="item-price">
+        <p class="hotel-price">
           <span>Мотель</span>
           <span >От 3000 Р.</span>
         </p>
-        <p class="item-rating">
+        <p class="hotel-rating">
           <i class="star"></i>
           <i class="star"></i>
           <i class="star"></i>
@@ -138,30 +138,30 @@
           <!--Потом совместить с тем что выше-->
         </p>
         <p>
-          <a class="item-info-button" href="blank.html">Подробнее</a>
-          <a class="item-book-button" href="blank.html">Забронировать</a>
+          <a class="hotel-button" href="blank.html">Подробнее</a>
+          <a class="hotel-button-color" href="blank.html">Забронировать</a>
         </p>
       </li>
-      <li class="found-item">
+      <li class="hotel">
         <a href="apartment.html">
-          <h3>Villas At Poco Diablo</h3>
+          <h3 class="hotel-name">Villas At Poco Diablo</h3>
           <p>
             <img src="img/apartment.jpg" width="135" height="90" alt="Villas At Poco Diablo">
           </p>
         </a>
-          <p class="item-price">
+          <p class="hotel-price">
             <span>Апартаменты</span>
             <span >От 2000 Р.</span>
           </p>
-          <p class="item-rating">
+          <p class="hotel-rating">
             <i class="star"></i>
             <i class="star"></i>
             <span>Рейтинг: 9,2</span>
             <!--Потом совместить с тем что выше-->
           </p>
           <p>
-            <a class="item-info-button" href="blank.html">Подробнее</a>
-            <a class="item-book-button" href="blank.html">Забронировать</a>
+            <a class="hotel-button" href="blank.html">Подробнее</a>
+            <a class="hotel-button-color" href="blank.html">Забронировать</a>
           </p>
       </li>
     </ul>
@@ -201,7 +201,7 @@
     <h2 class="hidden">Копирайт</h2>
     <p>Website by</p>
     <a href="https://htmlacademy.ru/intensive/htmlcss">
-      <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Академии">
+      <img src="img/logo-htmlacademy.png" width="115" height="41" alt="Логотип HTML Академии">
     </a>
   </section>
 </footer>

@@ -1,3 +1,21 @@
+/* Fonts */
+@font-face {
+  font-family: "PT Sans";
+  src: url("C:\Users\Gexam\Documents\GitHub\1710667-sedona-30\fonts\PTSans.woff2") format("woff2"),
+  url("C:\Users\Gexam\Documents\GitHub\1710667-sedona-30\fonts\PTSans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("C:\Users\Gexam\Documents\GitHub\1710667-sedona-30\fonts\PTSans-Bold.woff2") format("woff2"),
+  url("C:\Users\Gexam\Documents\GitHub\1710667-sedona-30\fonts\PTSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+
 /* Variables */
 
 :root {
@@ -14,7 +32,8 @@
   --basic-dark-cyan-blue: #669EC0;
   --basic-Shakespeare: #5496BD;
   --basic-white-smoke: #EBEBEB;
-
+  --basic-very-dark-gray: #666666;
+  --basic-taupe-gray: #888888;
 }
 
 /* Global */
@@ -23,13 +42,13 @@ body {
 min-width: 1220px; /**/
 margin: 0;
 padding: 0;
-font-family: "PT Sans", sans-serif;
+font-family: "PT Sans", "Arial", sans-serif;
 font-size: 14px;
 line-height: 21px;
 font-weight: 400;
-color: var(--basic-dark-charcoal);
+color: var(--basic-taupe-gray);
 text-transform: uppercase;
-background-color: var(--basic-white);
+background-color: var(--basic-taupe-gray);
 background-image: none;
 background-position: top center;
 background-repeat: no-repeat;
@@ -46,46 +65,45 @@ img {
 
 /* Main header */
 
-.inner-page .main header {
+.main header {
   background-color: var(--basic-white);
 }
 
 /* Main navigation */
 
-.main-navigation {
+.main-nav {
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
   color:var(--basic-black);
-  background-color: transparent;
-}
-
-.main-navigation-wrapper {
   background-color: var(--basic-white);
 }
 
-.site-navigation {
+.main-nav-wrapper {
+  background-color: var(--basic-white);
+}
+
+.site-nav {
   font-size: 14px;
   line-height: 26px;
   list-style: none;
 }
 
-.site-navigation-current a:not([href]) {
+.site-nav-current a:not([href]) {
   background-color: var(--basic-white);
 }
 
 /* User navigation*/
 
-.site-navigation a .user-navigation a {
+.site-nav {
   color: var(--basic-black)
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus,
+/*
 .site-navigation a:hover,
 .site-navigation a:focus {
   background-color: var(--basic-white)
-}
+} */
 
 /* Container */
 
@@ -94,7 +112,7 @@ img {
 }
 
 
-.introduction h3 {
+.intro-title {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -102,7 +120,7 @@ img {
   text-align: center;
 }
 
-.introduction p {
+.intro-content {
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
@@ -116,56 +134,54 @@ img {
 .features-list {
   list-style: none;
 }
-.highlighted-advantage-item {
+
+.advantage-item {
   text-align: center;
   color: var(--basic-white);
 }
 
+
+.advantage-title {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.advantage-item  {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
 .advantage-item {
-  text-align: center;
-}
-
-.highlighted-advantage-item h3 {
-  font-size: 21px;
-  line-height: 21px;
-  font-weight: 700;
-}
-
-.highlited-advantage-item p {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-}
-
-.advantage-item h3 {
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
   color: var(--basic-black);
 }
 
-.advantage-item p {
+.advantage-item {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   color: var(--basic-dark-charcoal);
 }
 
-.features-list h3 {
+.features-title {
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
   color: var(--basic-black);
 }
 
-.features-list p {
+.features-list {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   color: var(--basic-dark-charcoal);
 }
 
-.highlighted-find-hotels {
+.hotels {
   font-size: 30px;
   line-height: 24px;
   font-weight: 700;
@@ -225,7 +241,7 @@ img {
 
 .social-button:hover,
 .social-button:focus {
-  background-color: var(--basic-dark-cyan-blue)
+  background-color: var(--basic-dark-cyan-blue);
 }
 
 .footer-copyright p {
@@ -237,18 +253,81 @@ img {
 
 /* Catalog filter */
 
-.infrastructure-type-filter,
-.accomodation-type-filter {
+.accomodation-filter {
   font-size: 16px;
   line-height: 21px;
   font-weight: 700;
   color: var(--basic-white);
 }
 
-.infrastructure-item,
 .accomodation-item {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  color: var(--basic-white)
+  color: var(--basic-white);
+  list-style: none;
+}
+
+.hotels-filter {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--basic-black);
+}
+
+.hotel-option {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--basic-cyan-blue); /**/
+}
+
+.hotels {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  list-style: none;
+}
+
+.hotel-name {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--basic-black);
+}
+
+.hotel-price {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--basic-dark-charcoal);
+}
+
+.hotel-rating {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+  color: var(--basic-very-dark-gray);
+  background: var(--basic-light-gray);
+}
+
+.hotel-button {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--basic-white);
+  background-color: var(--basic-cyan-blue) ;
+  border: none;
+}
+
+.hotel-button-color {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--basic-white);
+  background-color: var(--basic-grayish-orange);
+  border: none;
 }
