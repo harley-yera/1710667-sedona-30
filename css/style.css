@@ -276,14 +276,14 @@ img {
   list-style: none;
 }
 
-.accomodation-filter {
+.accommodation-filter {
   font-size: 16px;
   line-height: 21px;
   font-weight: 700;
   color: var(--basic-white);
 }
 
-.accomodation-item {
+.accommodation-item {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
