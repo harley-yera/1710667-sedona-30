@@ -261,6 +261,21 @@ img {
 
 /* Catalog filter */
 
+.infrastructure-filter {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+  color: var(--basic-white);
+}
+
+.infrastructure-item {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--basic-white);
+  list-style: none;
+}
+
 .accomodation-filter {
   font-size: 16px;
   line-height: 21px;
