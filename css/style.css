@@ -39,7 +39,7 @@
 /* Global */
 
 body {
-min-width: 1220px; /**/
+min-width: 1280px;
 margin: 0;
 padding: 0;
 font-family: "PT Sans", "Arial", sans-serif;
@@ -49,9 +49,19 @@ font-weight: 400;
 color: var(--basic-taupe-gray);
 text-transform: uppercase;
 background-color: var(--basic-taupe-gray);
-background-image: none;
-background-position: top center;
-background-repeat: no-repeat;
+
+
+min-height: 100%;
+display: grid;
+grid-template-rows: min-content 1fr min-content;
+align-content: start;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 auto;
+  background-color: var(--basic-white);
 }
 
 a {
@@ -63,49 +73,86 @@ img {
   height: auto;
 }
 
+/* Grid */
+
+.page {
+  height: 100%;
+}
+
 /* Main header */
 
-.main-header {
-  background-color: var(--basic-white);
-}
+
 
 /* Main navigation */
 
 .main-nav {
-  font-size: 21px;
-  line-height: 21px;
+  display: grid;
+  line-height: 26px;
   font-weight: 700;
   color:var(--basic-black);
-  background-color: var(--basic-white);
 }
 
-.main-nav-wrapper {
-  background-color: var(--basic-white);
+.main-header-logo {
+  justify-self: center;
 }
+
+/* User navigation */
 
 .site-nav {
-  font-size: 14px;
+  display: grid;
+  grid-template-columns: 1fr max-content;
   line-height: 26px;
+  color: var(--basic-black);
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
-.site-nav-current a:not([href]) {
-  background-color: var(--basic-white);
+
+/* Style Guide */
+
+nav a {
+  text-decoration: none;
+  color: var(--basic-black);
 }
 
-/* User navigation*/
-
-.site-nav {
-  color: var(--basic-black)
+nav a:link {
+  color: var(--basic-black);
 }
 
-/*
-.site-navigation a:hover,
-.site-navigation a:focus {
-  background-color: var(--basic-white)
-} */
+nav a:hover {
+  color: var(--basic-cyan-blue);
+}
+
+nav a:active {
+  color: var(--basic-black);
+}
+
+nav a:visited {
+  color: var(--basic-grayish-orange);
+}
 
 /* Container */
+
+.cover {
+  background-color: var(--basic-cyan-blue);
+}
+ /* Picture */
+
+ .img-container {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+ }
+
+ .overlay-img {
+  position: absolute;
+  top: 132px;
+  left: 410px;
+  z-index: 2;
+
+ }
 
 .visually-hidden {
   position: absolute;
@@ -120,102 +167,152 @@ img {
   overflow: hidden;
 }
 
+.intro {
+display: grid;
+grid-template-columns: 1fr;
+}
 
 .intro-title {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  color:var(--basic-black);
+  color: var(--basic-black);
   text-align: center;
 }
 
 .intro-content {
-  font-size: 14px;
   line-height: 26px;
-  font-weight: 400;
-  color:var(--basic-dark-charcoal);
+  color: var(--basic-dark-charcoal);
   text-align: center;
 }
 
-/* Advantages */
+/* City promo */
 
-.advantages-list,
-.features-list {
-  list-style: none;
+.city-promo {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: var(--basic-cyan-blue);
 }
 
-.advantage-item {
-  text-align: center;
+.promo-content {
+text-align: center;
+}
+.promo-title {
+font-size: 21px;
+font-weight: 700;
+color: var(--basic-white);
+}
+
+.promo-number {
   color: var(--basic-white);
 }
 
+.promo-description {
+  color: var(--basic-white);
+}
 
-.advantage-title {
+.promo-urban {
+
+}
+
+.promo-nature {
+
+}
+
+/* City Advice */
+
+.city-advice {
+
+}
+
+.advice-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.advice-note {
+text-align: center;
+}
+
+.advice-title {
+  font-size: 21;
+  font-weight: 700;
+  color: #000000;
+}
+
+.advice-description {
+
+}
+
+
+/* City Facts */
+
+.city-facts {
+  background-color: var(--basic-gray);
+}
+
+.facts-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.city-fact {
+text-align: center;
+}
+
+.fact-title {
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
+  color: var(--basic-black)
 }
 
-.advantage-item  {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
+.fact-number {
+
 }
 
-.advantage-item {
-  font-size: 21px;
-  line-height: 21px;
-  font-weight: 700;
-  color: var(--basic-black);
+.fact-description {
+
 }
 
-.advantage-item {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  color: var(--basic-dark-charcoal);
+.find-hotels {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
 }
 
-.features-title {
-  font-size: 21px;
-  line-height: 21px;
-  font-weight: 700;
-  color: var(--basic-black);
-}
-
-.features-list {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  color: var(--basic-dark-charcoal);
-}
-
-.hotels {
+.find-title {
   font-size: 30px;
   line-height: 24px;
   font-weight: 700;
   color: var(--basic-black);
 }
 
+.find-descrition {
+  line-height: 24px;
+}
 
 
 /* Footer */
 
 .main-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 40px 0;
+  margin-top: 40px;
   color: var(--basic-black);
-  background-color: var(--basic-white);
 }
 
-.footer-contacts a {
-  color: var(--basic-black);
-  text-decoration: none;
+.footer-contacts {
+  margin: 0;
+  width: 400px;
 }
-
-.footer-contacts a:hover,
-.footer-contacts a:focus {
-  text-decoration: none;
-}
-
 
 .hashtag {
   font-size: 21px;
@@ -234,82 +331,102 @@ img {
 }
 
 .footer-social {
+  width: 400px;
+  justify-self: center;
   text-align: center;
 }
 
-.footer-social ul {
+.social-list {
   list-style: none;
 }
 
+
 /* Social buttons */
 
-.social-button {
-  color: inherit;/**/
+
+
+.footer-copyright {
+  max-width: 400px;
+  margin: 0;
 }
 
-.social-button:hover,
-.social-button:focus {
-  background-color: var(--basic-dark-cyan-blue);
-}
-
-.footer-copyright p {
+.copyright-content {
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
   color: var(--basic-black);
+  justify-self: center;
 }
+
+
+
+
+
+
 
 /* Catalog filter */
 
+.filters {
+  background-color: var(--basic-dark-cyan-blue);
+  background-image: url("/img/background-blur.jpg");
+}
+
 .infrastructure-filter {
   font-size: 16px;
-  line-height: 21px;
   font-weight: 700;
   color: var(--basic-white);
 }
 
 .infrastructure-item {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
   color: var(--basic-white);
   list-style: none;
 }
 
 .accommodation-filter {
   font-size: 16px;
-  line-height: 21px;
   font-weight: 700;
   color: var(--basic-white);
 }
 
 .accommodation-item {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
   color: var(--basic-white);
+  list-style: none;
+}
+
+/* Sorting */
+
+.sorting {
+
+}
+
+.option-list {
   list-style: none;
 }
 
 .hotels-filter {
   font-size: 12px;
   line-height: 18px;
-  font-weight: 400;
   color: var(--basic-black);
 }
 
 .hotel-option {
   font-size: 12px;
   line-height: 18px;
-  font-weight: 400;
   color: var(--basic-cyan-blue); /**/
 }
 
-.hotels {
+.catalog {
   font-size: 14px;
   line-height: 21px;
-  font-weight: 400;
   list-style: none;
+}
+
+.hotel-list {
+
+}
+
+.hotel-item {
+
 }
 
 .hotel-name {
@@ -320,24 +437,17 @@ img {
 }
 
 .hotel-price {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
   color: var(--basic-dark-charcoal);
 }
 
 .hotel-rating {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
+
   text-align: center;
   color: var(--basic-very-dark-gray);
   background: var(--basic-light-gray);
 }
 
 .hotel-button {
-  font-size: 14px;
-  line-height: 21px;
   font-weight: 700;
   text-align: center;
   color: var(--basic-white);
@@ -346,11 +456,35 @@ img {
 }
 
 .hotel-button-color {
-  font-size: 14px;
-  line-height: 21px;
   font-weight: 700;
   text-align: center;
   color: var(--basic-white);
   background-color: var(--basic-grayish-orange);
   border: none;
+}
+
+
+/* Grid for catalog */
+
+.page-catalog {
+  display: grid;
+  grid-template-columns: 1fr;
+  outline: 5px solid rgba(255, 0, 0, 0.7);
+  outline-offset: -5px;
+}
+
+.page-catalog .filters {
+  outline: 5px solid rgba(0, 255, 0, 0.7);
+  outline-offset: -5px;
+}
+
+.page-catalog .sorting {
+  grid-column: 1 / -1;
+  outline: 5px solid rgba(0, 0, 255, 0.7);
+  outline-offset: -5px;
+}
+
+.catalog {
+  outline: 5px solid rgba(0, 255, 255, 0.7);
+  outline-offset: -5px;
 }
