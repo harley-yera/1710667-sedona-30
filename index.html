@@ -32,7 +32,7 @@
     <main class="container">
 
       <h1 class="visually-hidden">Седона - город в Аризоне</h1>
-      <section>
+      <section class="overview">
         <div class="cover">
           <div class="img-container">
             <img src="img/sedona-background.jpg" width= "1200" height="509" alt="Горы Сидоны">
@@ -43,17 +43,15 @@
         </div>
       </section>
       <section class="intro">
+        <h2 class="visually-hidden">Преимущества</h2>
         <h3 class="intro-title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
         <p class="intro-content">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </section>
       <section class="city-promo">
         <div class="promo-content">
-          <h2 class="visually-hidden">Преимущества</h2>
           <h3 class="promo-title">Настоящий городок</h3>
-          <p>
             <span class="promo-number">— №1 —</span>
-            <span class="promo-description">Седона - не атракцион для туристов, там течёт своя жизнь</span>
-          </p>
+            <p class="promo-description">Седона - не атракцион для туристов, там течёт своя жизнь</p>
         </div>
         <div class="promo-urban">
           <img src="img/american-flag.jpg" width="800" height="256" alt="Здание с флагом Америки">
@@ -131,14 +129,11 @@
           </li>
         </ul>
       </section>
-
-          <section class="city-promo">
+      <section class="city-promo">
             <div class="promo-content">
               <h3 class="promo-title">Там есть мост дьявола</h3>
-              <p>
                 <span class="promo-number">— №2 —</span>
-                <span class="promo-description">Да, по нему можно пройти! Если конечно вы осмелитесь</span>
-              </p>
+                <p class="promo-description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </div>
             <div class="promo-nature">
               <img class="bridge-view" src="img/devils-canyon.jpg" width="800" height="256" alt="Мост дьявола">
@@ -148,24 +143,18 @@
             <ul class="facts-list">
               <li class="city-fact">
                 <h3 class="fact-title">Небольшая площадь</h3>
-                <p>
                   <span class="fact-number">— №3 —</span>
-                  <span class="fact-description">Все достопримечательности находятся очень близко</span>
-                </p>
+                  <p class="fact-description">Все достопримечательности находятся очень близко</p>
               </li>
               <li class="city-fact">
                 <h3 class="fact-title">Красивая дорога</h3>
-                <p>
                   <span class="fact-number">— №4 —</span>
-                  <span class="fact-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</span>
-                </p>
+                  <p class="fact-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
               </li>
               <li class="city-fact">
                 <h3 class="fact-title">Мало туристов</h3>
-                <p>
                   <span class="fact-number">— №5 —</span>
-                  <span class="fact-description">Большинство едет в Гранд Каньон и толпится там</span>
-                </p>
+                  <p class="fact-description">Большинство едет в Гранд Каньон и толпится там</p>
               </li>
             </ul>
           </section>
@@ -175,22 +164,38 @@
             <p class="find-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p><!--interactive?-->
             <!-- class="modal-map" Здесь будет карта-->
           </section>
-          <!--
-          <section>
-          Кнопка "Поиск гостиницы в Седоне"
-          Здесь будет форма записи
+
+          <section class="pop-up">
+            <div class="modal-window-tite">
+              <h2>Поиск гостиницы в Седоне</h2>
+            </div>
+            <div class="modal-window">
+              <form action="https://echo.htmlacademy.ru" method="post">
+                <label for="checkin">Дата заезда:</label>
+                <input type="date" name="check-in" id="checkin" value="24 апреля 2017">
+                <label for="checkout">Дата выезда</label>
+                <input type="date" name="checkout" id="checkout" value="4 июля 2017">
+                <label for="adults">Взрослые:</label>
+                <input type="number" name="adults" min="1" id="adults" value="2">
+                <label for="children">Дети:</label>
+                <input type="number" name="children" id="children" value="0">
+                <input class="search-button" type="submit" name="search-button" id="search-button" value="Найти">
+              </form>
+            </div>
           </section>
-           -->
+
 
     </main>
 
     <footer class="page-footer main-footer">
       <section class="footer-contacts">
-        <h2 class="visually-hidden">Как нас найти</h2>
-        <p>
-          <a class="hashtag" href="blank.html">#visitSEDONA</a><br>
-          Тел: <a class="contacts-phone" href="tel:+74956660166">+7(495)666-01-66</a>
-        </p>
+        <div class="contacts-content">
+          <h2 class="visually-hidden">Как нас найти</h2>
+          <p>
+            <a class="hashtag" href="blank.html">#visitSEDONA</a>
+            Тел: <a class="contacts-phone" href="tel:+74956660166">+7(495)666-01-66</a>
+          </p>
+        </div>
       </section>
       <section class="footer-social">
         <h2 class="visually-hidden">Мы в соцсетях</h2>
@@ -198,33 +203,16 @@
           <li>
             <a class="social-button" href="#">
               <span>Твиттер</span>
-              <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M10.95 1.14409C12.635 0.648089 13.934 1.41409 14.527 2.32309C15.2 2.09209 15.858 1.84209 16.538
-                1.61509C16.5249 2.30145 16.2117 2.94761 15.681 3.38309C16.366 3.55309 16.985 2.89209 16.985 2.89209C16.816
-                3.89209 15.979 4.68009 15.422 4.91609C15.191 11.6661 12.247 16.1331 5.34498 15.9981H4.89898C4.48898 15.9981
-                0.734977 15.5381 0.000976562 14.1111C2.27198 14.3071 3.89398 13.6891 4.69398 12.9341C3.73398 12.6341 2.01498
-                12.4571 1.71498 9.98409C2.06398 10.0901 2.27898 10.2121 2.90498 10.1031C1.70498 9.24709 0.373977 8.53009
-                0.447977 6.33009C0.732977 6.65809 1.51498 6.86609 1.78798 6.80209C1.08498 6.56109 -0.182023 3.44209 0.893977
-                1.85009C2.71198 3.70409 4.62898 5.45609 8.04598 5.62309C8.25398 3.33009 9.18298 1.79309 10.95 1.14409Z"
-                fill="white"/>
-              </svg>
             </a>
           </li>
           <li>
             <a class="social-button" href="#">
               <span>Фейсбук</span>
-              <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white"/>
-              </svg>
             </a>
           </li>
           <li>
             <a class="social-button" href="#">
               <span>Ютуб</span>
-              <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H17C18.65 0 20 1.35 20 3V13C20 14.65 18.65 16 17 16H3C1.35
-                16 0 14.65 0 13V3C0 1.35 1.35 0 3 0ZM6.027 4.002V11.998L15.014 8L6.027 4.002Z" fill="white"/>
-              </svg>
             </a>
           </li>
         </ul>
