@@ -34,6 +34,8 @@
   --basic-white-smoke: #EBEBEB;
   --basic-very-dark-gray: #666666;
   --basic-taupe-gray: #888888;
+  --basic-new-gray: #ABABAB;
+
 }
 
 /* Global */
@@ -355,26 +357,30 @@ text-align: center;
 
 .main-footer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   color: var(--basic-black);
-  padding-right: 110px;
-  padding-left: 110px;
 }
+
+/* Contacts */
 
 .footer-contacts {
   display: flex;
-  flex-grow: 1;
+  flex-direction: column;
+  flex-wrap: wrap;
   margin: 0;
+  width: 450px;
   padding-top: 23px;
-  padding-bottom: 36px;
-  width: 415px;
 }
 
 .hashtag {
+
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   color: var(--basic-black);
+  padding-left: 163px;
+  padding-bottom: 9px;
 }
 
 .contacts-phone {
@@ -382,24 +388,34 @@ text-align: center;
   line-height: 26px;
   font-weight: 700;
   color: var(--basic-black);
-
+  padding-left: 121px;
 }
 
+.footer-contacts a {
+  color: var(--basic-black);
+}
+
+/* Social */
+
 .footer-social {
-  padding-right: 180px;
+  width: 300px;
+  padding-top: 36px;
+  padding-bottom: 36px;
 }
 
 .social-list {
   list-style: none;
   display: flex;
   justify-content: center;
-  padding-top: 36px;
-  padding-bottom: 36px;
+  margin: 0;
+  padding: 0;
 }
 
 .social-button {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   width: 46px;
   height: 48px;
   background-color: var(--basic-cyan-blue);
@@ -408,15 +424,13 @@ text-align: center;
 
 }
 
-/* Social buttons */
-
-
+/* Copyright */
 
 .footer-copyright {
   display: flex;
   margin: 0;
+  padding-left: 110px;
   padding-top: 41px;
-
 }
 
 .copyright {
@@ -424,10 +438,13 @@ text-align: center;
   line-height: 26px;
   font-weight: 400;
   color: var(--basic-black);
-  margin-right: 8px;
+  padding-right: 8px;
 
 }
 
+.academy-logo {
+
+}
 
 
 
@@ -529,7 +546,7 @@ text-align: center;
   list-style: none;
   display: flex;
   flex-grow: 1;
-
+  padding-right: 20px;
 }
 
 .sorting-title {
@@ -557,6 +574,9 @@ text-align: center;
   justify-content: flex-end;
 }
 
+.arrow-up {
+  padding-right: 8px;
+}
 
 
 
@@ -570,8 +590,9 @@ text-align: center;
 
 
 .hotel-list {
-  margin: 0;
   padding: 0;
+  margin: 0;
+
   list-style: none;
 }
 
@@ -579,6 +600,8 @@ text-align: center;
   display: flex;
   align-items: flex-start;
   margin-bottom: 2px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 
@@ -586,9 +609,9 @@ text-align: center;
 .hotel-image {
   width: 135px;
   height: 90px;
-  padding-top: 30px;
+
   padding-right: 29px;
-  padding-bottom: 30px;
+
 }
 
 .hotel-info {
@@ -606,7 +629,7 @@ padding-bottom: 7px;;
   color: var(--basic-black);
   margin-top: 0;
   margin-bottom: 0px;
-  padding-top: 23px;
+
   padding-bottom: 7px;
 }
 
@@ -645,7 +668,7 @@ padding-left: 6px;
   padding-left: 17px;
   padding-right: 16px;
   padding-top: 3px;
-  padding-bottom: 3px;
+
 }
 
 .hotel-button-color {
@@ -657,7 +680,7 @@ padding-left: 6px;
   padding-left: 17px;
   padding-right: 16px;
   padding-top: 3px;
-  padding-bottom: 3px;
+
 }
 
 
@@ -673,7 +696,7 @@ padding-left: 6px;
   display: flex;
   justify-content: flex-end;
   margin-top: 0px;
-  padding-top: 29px;
+
   padding-bottom: 40px;
 }
 
@@ -694,7 +717,7 @@ padding-left: 6px;
   padding-left: 15px;
   padding-top: 3px;
   margin: 0;
-  margin-bottom: 22px;
+
 }
 
 /* Modal window */
@@ -708,7 +731,7 @@ padding-left: 6px;
 }
 
 .modal-window {
-
+  margin-bottom: 30px;
 }
 
 
@@ -724,4 +747,75 @@ padding-left: 6px;
 
 }
 
-/* Flex /
+/* Filter */
+
+.filter-item {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.range-filter {
+  width: 317px;
+
+  margin: 0;
+}
+
+.filter-item legend {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+  color: var(--basic-white);
+}
+
+.range-controls {
+  position: relative;
+  margin: 0;
+  height: 20px;
+
+  padding-top: 5px; /* */
+}
+
+.range-controls .scale {
+  height: 2px;
+
+}
+
+.range-controls .bar {
+  width: 90%;
+  height: 2px;
+  background: var(--basic-white);
+}
+
+.range-controls .toggle {
+  /*position: absolute;*/
+  top: 20px; /**/
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid var(--basic-white);
+  background-color: var(--basic-new-gray);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+.price-controls input {
+  text-transform: uppercase;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: var(--basic-white);
+  background: transparent;
+  text-align: center;
+  border-radius: 2px;
+  border-color: var(--basic-white);
+}
