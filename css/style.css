@@ -60,6 +60,7 @@ background-color: var(--basic-taupe-gray);
   margin: 0 auto;
   padding: 0;
   background-color: var(--basic-white);
+  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
@@ -82,8 +83,8 @@ img {
 
 /* Main header */
 .main-header {
-  /*padding-right: 72px;
-  padding-left: 72px;*/
+  padding-right: 72px;
+  padding-left: 72px;
 }
 
 
@@ -118,7 +119,7 @@ img {
 }
 
 .site-nav li {
-  width: 300px;
+  width: 230px;
 }
 
 .site-nav a {
@@ -141,7 +142,7 @@ nav li:nth-child(4) {
 }
 
 nav li:nth-child(2) {
-  /*margin-right: 136px;*/
+  margin-right: 136px;
 }
 
 /* Style Guide */
@@ -215,7 +216,7 @@ nav a.active {
 .intro {
   padding-left: 340px;
   padding-right: 341px;
-  margin-bottom: 51px;
+  margin-bottom: 53px;
 }
 
 .intro-title {
@@ -224,13 +225,15 @@ nav a.active {
   font-weight: 700;
   color: var(--basic-black);
   text-align: center;
-  padding-bottom: 22px;
+  padding-bottom: 43px;
+  margin: 0;
 }
 
 .intro-content {
   line-height: 26px;
   color: var(--basic-dark-charcoal);
   text-align: center;
+  margin: 0;
 }
 
 /* City promo */
@@ -239,51 +242,61 @@ nav a.active {
   display: grid;
   grid-template-columns: 1fr 2fr;
   background-color: var(--basic-cyan-blue);
-
+  margin-bottom: 20px;
 }
 
 .city-promo-reverse {
   display: grid;
   grid-template-columns: 2fr 1fr;
   background-color: var(--basic-cyan-blue);
+
 }
 
 .promo-content {
+
   text-align: center;
-  padding-left: 49px;
-  padding-right: 49px;
+  padding-left: 39px;
+  padding-right: 39px;
 }
 
 .promo-title {
   font-size: 21px;
   font-weight: 700;
   color: var(--basic-white);
-  padding-top: 40px;
-
+  padding-top: 45px;
+  padding-right: 82px;
+  padding-left: 82px;
+  padding-bottom: 25px;
+  margin: 0;
 }
 
 .promo-number {
+
   color: var(--basic-white);
 }
 
 .promo-description {
+  padding-top: 25px;
   color: var(--basic-white);
+  margin: 0;
 }
 
 .promo-urban {
   display: flex;
+
   background-size: cover;
 }
 
 .promo-nature {
   display: flex;
+
   background-size: cover;
 }
 
 /* City Advice */
 
 .city-advice {
-
+margin-bottom: 35px;
 }
 
 .advice-list {
@@ -298,25 +311,34 @@ nav a.active {
 text-align: center;
 }
 
-.advice-title {
-  font-size: 21;
+.advice-titles {
+  font-size: 21px;
   font-weight: 700;
   color: #000000;
+  margin: 0;
+  padding-top: 26px;
 }
 
 .house {
   display: block;
+  padding-top: 40px;
 }
 
 .food {
   display: block;
+  padding-top: 40px;
 }
 
 .gift {
   display: block;
+  padding-top: 40px;
 }
 .advice-description {
-
+  margin: 0;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-top: 28px;
+  padding-bottom: 30px;
 }
 
 
@@ -344,7 +366,12 @@ text-align: center;
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
-  color: var(--basic-black)
+  color: var(--basic-black);
+  margin: 0;
+  padding-top: 47px;
+  padding-left: 125px;
+  padding-right: 125px;
+  padding-bottom: 25px;
 }
 
 .fact-number {
@@ -352,7 +379,11 @@ text-align: center;
 }
 
 .fact-description {
-
+  margin: 0;
+  padding-left: 71px;
+  padding-right: 71px;
+  padding-bottom: 54px;
+  padding-top: 25px;
 }
 
 .find-hotels {
@@ -365,11 +396,16 @@ text-align: center;
   font-weight: 700;
   color: var(--basic-black);
   margin: 0;
+  padding-top: 58px;
+  padding-bottom: 35px;
 }
 
-.find-descrition {
+.find-description {
   line-height: 24px;
   margin: 0;
+  padding-right: 360px;
+  padding-left: 360px;
+  padding-bottom: 37px;
 }
 
 
@@ -382,7 +418,7 @@ text-align: center;
 
 .modal-window-title {
   width: 568px;
-  padding: 12px 0;
+  padding: 15px 0;
   text-align: center;
   background-color: var(--basic-grayish-orange);
   color: var(--basic-white);
@@ -413,28 +449,28 @@ text-align: center;
 }
 
 .label-adults {
-  padding-right: 20px;
+  padding-right: 36px;
 }
 
 .label-children {
-  padding-left: 25px;
-  padding-right: 20px;
+  padding-left: 55px;
+  padding-right: 30px;
 }
 
 .input-enter,
 .input-leaving {
   height: 38px;
   margin-bottom: 29px;
-  width: 300px;
+  width: 280px;
   background-color: var(--basic-light-gray);
   border: none;
+  padding-right: 55px;
   padding-left: 10px;
-  padding-left: 33px;
 }
 
 .input-adults,
 .input-children {
-  width: 114px;
+  width: 100px;
   height: 38px;
   background-color: var(--basic-light-gray);
   border: none;
@@ -442,7 +478,7 @@ text-align: center;
 }
 
 .input-adults {
-
+  padding-right: 10px;
 }
 
 .enter svg {
@@ -468,29 +504,29 @@ text-align: center;
 .children-number svg:first-of-type {
   display: block;
   position: absolute;
-  right: 150px;
-  top: 204px;
+  right: 142px;
+  top: 210px;
 }
 
 .children-number svg:last-of-type {
   display: block;
   position: absolute;
   right: 70px;
-  top: 204px;
+  top: 206px;
 }
 
 .adults-number svg:first-of-type {
   display: block;
   position: absolute;
-  right: 310px;
-  top: 204px;
+  right: 380px;
+  top: 210px;
 }
 
 .adults-number svg:last-of-type {
   display: block;
   position: absolute;
-  right: 450px;
-  top: 204px;
+  right: 310px;
+  top: 206px;
 }
 
 .window-button {
