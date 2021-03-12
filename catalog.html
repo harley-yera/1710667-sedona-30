@@ -27,10 +27,8 @@
       </nav>
     </header>
 
-    <main class="page-catalog inner-container">
-
+    <main>
       <section class="filters inliner">
-
         <h2 class="visually-hidden">Фильтр гостиниц</h2>
         <form class="filters-form" method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="infrastructure-filter">
@@ -70,35 +68,30 @@
         </form>
 
         <div class="cost-per-day">
-        <form class="form" action="http://echo.htmlacademy.ru" method="post" >
-          <fieldset class="range">
-            <legend class="range-title">Стоимость в сутки (<span aria-label="В рублях">р</span>):</legend>
-            <div class="range-controls">
-              <span>
-                <label class="range-label range-label-min" for="price-min">от </label>
-                <output class="range-output" for="price-min" aria-hidden="true">0</output>
+          <form class="form" action="http://echo.htmlacademy.ru" method="post" >
+            <fieldset class="range">
+              <legend class="range-title">Стоимость в сутки (<span aria-label="В рублях">р</span>):</legend>
+              <div class="range-controls">
+                <span>
+                  <label class="range-label range-label-min" for="price-min">от</label>
+                  <output class="range-output" for="price-min" aria-hidden="true">0</output>
                 </span>
                 <input class="range-input visually-hidden" id="price-min" type="text" name="price" min="0" max="3000" step="100" value="0">
                 <label class="range-lever range-lever-min" for="price-min" aria-hidden="true"></label>
-
                 <span>
                   <label class="range-label range-label-max" for="price-max">до</label>
                   <output class="range-output" for="price-max" aria-hidden="true">3000</output>
                 </span>
-
                 <input class="range-input visually-hidden" id="price-max" type="text" name="price" min="0" max="3000" step="100" value="3000">
                 <label class="range-lever range-lever-max" for="price-max" aria-hidden="true"></label>
                 <div class="range-scale">
                   <div class="range-bar"></div>
                 </div>
-            </div>
+              </div>
             </fieldset>
             <button class="btn-transparent" type="submit">Показать</button>
-         </form>
-     </div>
-
-
-
+          </form>
+        </div>
       </section>
 
       <div class="sorting">
@@ -107,7 +100,6 @@
           Найдено:
          <span>3</span>
         </p>
-
         <div class="sorting-list">
           <p class="sorting-title">Сортировка:</p>
           <ul class="option-list">
@@ -122,7 +114,6 @@
             </li>
           </ul>
         </div>
-
         <div class="arrows">
           <a aria-label="up" class="arrow-up" href="blank.html"><i class="icon-up">
             <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -133,12 +124,9 @@
               <path d="M5.5 10L0 0H11" fill="#81B3D2"/>
             </svg></i></a>
         </div>
-
       </div>
 
-
       <section class="catalog">
-
         <h2 class="visually-hidden">Найденые гостиницы</h2>
         <ul class="hotel-list">
           <li class="hotel-item inliner">
@@ -158,7 +146,6 @@
                 <a class="hotel-button-color" href="blank.html">Забронировать</a>
               </p>
             </div>
-
             <div class="hotel-score">
               <div class="stars">
                 <i aria-label="star" class="star"></i>
@@ -171,38 +158,34 @@
                 </p>
             </div>
           </li>
-
           <li class="hotel-item inliner">
             <div class="hotel-image">
               <img src="img/motel.jpg" width="135" height="90" alt="Desert Quaill Inn">
             </div>
-
             <div class="hotel-info">
               <a href="motel.html">
                 <h3 class="hotel-name">Desert Quail Inn</h3>
               </a>
-                <p class="hotel-price">
-                  <span class="price-object">Мотель</span>
-                  <span class="price-tag">От 3000 Р.</span>
-                </p>
-                <p class="hotel-buttons">
-                  <a class="hotel-button" href="blank.html">Подробнее</a>
-                  <a class="hotel-button-color" href="blank.html">Забронировать</a>
-                </p>
+              <p class="hotel-price">
+                <span class="price-object">Мотель</span>
+                <span class="price-tag">От 3000 Р.</span>
+              </p>
+              <p class="hotel-buttons">
+                <a class="hotel-button" href="blank.html">Подробнее</a>
+                <a class="hotel-button-color" href="blank.html">Забронировать</a>
+              </p>
+            </div>
+            <div class="hotel-score">
+              <div class="stars">
+                <i aria-label="star" class="star"></i>
+                <i aria-label="star" class="star"></i>
+                <i aria-label="star" class="star"></i>
               </div>
-
-              <div class="hotel-score">
-                <div class="stars">
-                  <i aria-label="star" class="star"></i>
-                  <i aria-label="star" class="star"></i>
-                  <i aria-label="star" class="star"></i>
-                </div>
                 <p class="hotel-rating">
                 <span>Рейтинг: 8,9</span>
                 </p>
               </div>
           </li>
-
           <li class="hotel-item inliner">
             <div class="hotel-image">
               <img src="img/apartment.jpg" width="135" height="90" alt="Villas At Poco Diablo">
@@ -231,9 +214,7 @@
               </div>
            </li>
         </ul>
-
       </section>
-
     </main>
 
     <footer class="main-footer">
@@ -261,7 +242,7 @@
                 2.90498 10.1031C1.70498 9.24709 0.373977 8.53009 0.447977 6.33009C0.732977 6.65809 1.51498 6.86609
                 1.78798 6.80209C1.08498 6.56109 -0.182023 3.44209 0.893977 1.85009C2.71198 3.70409 4.62898 5.45609
                 8.04598 5.62309C8.25398 3.33009 9.18298 1.79309 10.95 1.14409Z" fill="white"/>
-                </svg>
+              </svg>
             </a>
           </li>
           <li>
@@ -278,7 +259,7 @@
               <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H17C18.65 0 20 1.35 20 3V13C20 14.65 18.65 16 17
                 16H3C1.35 16 0 14.65 0 13V3C0 1.35 1.35 0 3 0ZM6.027 4.002V11.998L15.014 8L6.027 4.002Z" fill="white"/>
-                </svg>
+              </svg>
             </a>
         </ul>
       </section>
@@ -357,7 +338,6 @@
               3.12895L2.01514 4.56395V15.3534L15.2876 7.27211Z" fill="#231F20"/>
               </svg>
           </a>
-
         </div>
       </section>
     </footer>
