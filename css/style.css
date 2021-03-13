@@ -563,6 +563,7 @@ nav li:nth-child(2) {
   left: 0;
   outline: none;
   cursor: pointer;
+  background-color: var(--basic-light-gray);
 }
 
 
@@ -574,6 +575,7 @@ nav li:nth-child(2) {
   right: 0;
   outline: none;
   cursor: pointer;
+  background-color: var(--basic-light-gray);
 }
 
 .plus-sign svg:hover path {
