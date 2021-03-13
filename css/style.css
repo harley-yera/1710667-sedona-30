@@ -150,25 +150,29 @@ nav li:nth-child(2) {
 
 /* Style Guide */
 
-nav a {
+.site-link {
   text-decoration: none;
   color: var(--basic-black);
 }
 
-nav a:hover {
+.site-link:hover {
   color: var(--basic-cyan-blue);
 }
 
-nav a:active {
+.site-link:active {
   color: var(--basic-black);
   opacity: 30%;
 }
 
-nav a.active {
+.site-link.active {
   cursor: default;
   color: var(--basic-grayish-orange);
 }
 
+
+.current-page {
+  color: var(--basic-grayish-orange);
+}
 
 /* Picture */
 
@@ -325,7 +329,7 @@ nav a.active {
 .house {
   display: block;
   padding-top: 80px;
-  margin-left: 165px;
+  background-position: center;
   margin-top: 5px;
   background-image: url(../img/icons/icon-house.svg);
   background-repeat: no-repeat;
@@ -333,9 +337,9 @@ nav a.active {
 
 .food {
   display: block;
+  background-position: center;
   padding-top: 80px;
   margin-top: 5px;
-  margin-left: 161px;
   background-image: url(../img/icons/icon-food.svg);
   background-repeat: no-repeat;
 
@@ -343,8 +347,8 @@ nav a.active {
 
 .gift {
   display: block;
+  background-position: center;
   padding-top: 85px;
-  margin-left: 165px;
   background-image: url(../img/icons/icon-gift.svg);
   background-repeat: no-repeat;
 }
@@ -470,14 +474,14 @@ nav a.active {
 .input-leaving {
   height: 38px;
   margin-bottom: 26px;
-  width: 278px;
+  width: 346px;
   background-color: var(--basic-light-gray);
   border: none;
   padding-right: 50px;
   padding-left: 15px;
   text-transform: uppercase;
   color: var(--basic-black);
-  outline: none;
+  box-sizing: border-box;
 }
 
 
@@ -496,6 +500,7 @@ nav a.active {
   position: absolute;
   right: 10px;
   top: 8px;
+  cursor: pointer;
 }
 
 .enter svg:hover path {
@@ -557,6 +562,7 @@ nav a.active {
   position: absolute;
   left: 0;
   outline: none;
+  cursor: pointer;
 }
 
 
@@ -567,15 +573,22 @@ nav a.active {
   position: absolute;
   right: 0;
   outline: none;
+  cursor: pointer;
 }
 
-.plus-sign svg:hover path,
-.minus-sign svg:hover path {
+.plus-sign svg:hover path {
   fill: var(--basic-black);
 }
 
-.plus-sign svg:active path,
-.minus-sign svg:active path {
+.minus-sign svg:hover rect {
+  fill: var(--basic-black);
+}
+
+.plus-sign svg:active path {
+  fill: var(--basic-cyan-blue);
+}
+
+.minus-sign svg:active rect {
   fill: var(--basic-cyan-blue);
 }
 
@@ -598,6 +611,7 @@ nav a.active {
   border: none;
   outline: none;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .window-button:hover {
